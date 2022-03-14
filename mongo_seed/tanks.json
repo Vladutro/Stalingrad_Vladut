@@ -1,0 +1,6 @@
+{"_id":{"$oid":"620f98255a5353548ea8357b"},"type":"Panzer IV","fire_rate_ps":"0.5","moving_speed":"20","components":["Turret","Tracks","Barrel","Gun","Nozzle",""],"HP":"75","callsign_id":"142"}
+{"_id":{"$oid":"620f961c798bf8140ab0a496"},"type":"T-34","fire_rate_ps":"0.8","moving_speed":"30","HP":50,"components":["Turret","Tracks","Barrel"],"callsign_id":"999"}
+{"_id":{"$oid":"6214e46ea0380e3619dae502"},"type":"T-34","fire_rate_ps":"0.7","moving_speed":"15","HP":50,"components":["Turret","Tracks","Barrel"],"callsign_id":"23432"}
+{"_id":{"$oid":"6214e48aa0380e3619dae503"},"type":"Panzer IV","fire_rate_ps":"0.5","moving_speed":"20","components":["Turret","Tracks","Barrel"],"HP":"75","callsign_id":"321 Berlin"}
+{"_id":{"$oid":"6214e492a0380e3619dae504"},"type":"Panzer IV","fire_rate_ps":"0.5","moving_speed":"20","components":["Turret","Tracks","Barrel"],"HP":"75","callsign_id":"3"}
+{"_id":{"$oid":"6214e496a0380e3619dae505"},"type":"T-34","fire_rate_ps":"0.7","moving_speed":"15","HP":50,"components":["Turret","Tracks","Barrel"],"callsign_id":"323"}

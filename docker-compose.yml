@@ -1,0 +1,46 @@
+version: "3.8"
+services:
+  backend:
+    container_name: StalingradServerLinux
+    build:
+      context: StalingradServerLinux
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+      - "7890:7890"
+    expose:
+      - 8000
+      - 7890
+    restart: on-failure
+    depends_on:
+      - mongo
+    links:
+      - mongo
+  client:
+    container_name: StalingradClientLinux
+    build:
+      context: StalingradClientLinux
+      dockerfile: Dockerfile
+    restart: on-failure
+    depends_on:
+      - backend
+    links:
+      - backend
+  mongo:
+    container_name: mongo
+    image: mongo
+    volumes:
+      - mongo_data:/data/db
+    ports:
+      - "27017:27017"
+  mongo_seed:
+    container_name: mongo_seed
+    build:
+      context: mongo_seed
+      dockerfile: Dockerfile
+    depends_on:
+      - mongo
+    links:
+      - mongo
+volumes:
+  mongo_data:
